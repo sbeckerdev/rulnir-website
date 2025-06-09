@@ -1,16 +1,30 @@
----
+<!--
+  index.astro
+  Main entry page for the Rulnir Web Astro site.
 
----
+  This page uses the MainLayout component to provide a consistent layout and includes the Header, Hero, Section, and Footer components.
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+  Usage:
+    - Rendered at the root URL ('/').
+    - Update or extend the imported components to customize homepage content and layout.
+
+  Dependencies:
+    - MainLayout.astro: Provides the overall page structure and accepts a title prop.
+    - Header.astro, Hero.astro, Section.astro, Footer.astro: Modular content sections for the homepage.
+
+  To add more sections or features, import and include additional components as needed.
+-->
+---
+import Footer from "../components/Footer.astro"
+import Header from "../components/Header.astro"
+import Hero from "../components/Hero.astro"
+import Section from "../components/Section.astro"
+import MainLayout from "../layouts/MainLayout.astro"
+---
+<MainLayout title="Home Page">
+<Header/>
+<Hero/>
+<Section/>
+<Footer/>
+
+</MainLayout>

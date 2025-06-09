@@ -1,0 +1,23 @@
+---
+import NavBar from "./NavBar.astro";
+---
+
+<!--
+  Header.astro
+  This component renders the header and navigation bar for the Rulnir Web Astro site.
+
+  Usage:
+    - Import and include <Header /> at the top of your layout or page.
+    - Customize navigation links, branding, and menu items as needed.
+
+  Dependencies:
+    - None (pure Astro component, uses Tailwind CSS for styling).
+
+  Extend this file to add more navigation, logo, or user menu as needed.
+--><!-- ========== HEADER ========== -->
+<header
+  class="flex flex-wrap md:justify-start   md:flex-nowrap z-50 w-full bg-white border-b border-gray-200 dark:bg-neutral-800 dark:border-neutral-700"
+>
+  <NavBar/
+</header>
+<!-- ========== END HEADER ========== -->

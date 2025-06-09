@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@import "preline/variants.css";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+body{
+    @apply bg-white dark:bg-neutral-950  text-gray-900 dark:text-gray-100;
+}

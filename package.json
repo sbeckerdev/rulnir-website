@@ -1,5 +1,5 @@
 {
-  "name": "astro-client",
+  "name": "rulnir-web",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -9,6 +9,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.9.1"
+    "@tailwindcss/vite": "^4.1.8",
+    "astro": "^5.9.1",
+    "preline": "^3.1.0",
+    "tailwindcss": "^4.1.8"
   }
 }
