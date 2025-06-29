@@ -1,0 +1,82 @@
+---
+import productsImage from "../../images/products.svg";
+import streamlineImage from "../../images/streamline.svg";
+import tailorImage from "../../images/tailor.svg";
+import dynamicImage from "../../images/dynamic.webp";
+import { Image } from "astro:assets";
+---
+
+<section class="bg-white mb-10 dark:bg-[#030303]">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+ 
+
+    <div class="grid grid-cols-2 gap-4 dark:text-white text-center">
+              <div class="bg-[#000000] rounded-3xl p-2">
+        <Image
+          src={dynamicImage}
+          class="rounded-3xl"
+          alt="A description of the image"
+        />
+      </div>
+      <div class="rounded-3xl p-5">
+        <ul class="text-left list-none mb-5">
+          <li class="mb-2">
+            <h2 class="uppercase font-extrabold text-pink-700">
+            Dynamic Features
+
+            </h2>
+          </li>
+          <li class="mb-2"><h2 class="text-3xl">Adaptable tools that evolve to meet your changing needs effortlessly.</h2></li>
+          <li class="mb-2">
+            <h2 class="text-gray-400">
+             Customized Solutions
+
+            </h2>
+          </li>
+        </ul>
+        <ul class="text-left list-none">
+          <li class="mb-2">
+            <div class="flex flex-row justify-start space-x-3 mb-4">
+              <div>
+                <Image src={tailorImage} alt="A description of the image" />
+              </div>
+              <div>
+                <h2 class="text-2xl">Tailor our features to fit your unique requirements and preferences.</h2>
+                <p class="text-gray-400">
+                Simplified Processes
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="mb-2">
+            <div class="flex flex-row justify-start space-x-3 mb-4">
+              <div>
+                <Image src={streamlineImage} alt="A description of the image" />
+              </div>
+              <div>
+                <h2 class="text-2xl">Streamline your tasks with our easy-to-use interface and features.</h2>
+                <p class="text-gray-400">
+                Cutting-Edge Technology
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="mb-2">
+            <div class="flex flex-row justify-start space-x-3 mb-4">
+              <div>
+                <Image src={productsImage} alt="A description of the image" />
+              </div>
+              <div>
+                <h2 class="text-2xl">Stay ahead with the latest advancements in tech integrated into our product.</h2>
+                <p class="text-gray-400">
+             24/7 Customer Support
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+ 
+    </div>
+  </div>
+</section>

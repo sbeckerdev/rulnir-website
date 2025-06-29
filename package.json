@@ -9,6 +9,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.10.0"
+    "@preline/accordion": "^3.1.0",
+    "@tailwindcss/vite": "^4.1.10",
+    "astro": "^5.10.0",
+    "preline": "^3.1.0",
+    "tailwindcss": "^4.1.10"
+  },
+  "devDependencies": {
+    "@iconify-json/lucide": "^1.2.51",
+    "astro-icon": "^1.1.5"
   }
 }

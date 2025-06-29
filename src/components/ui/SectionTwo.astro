@@ -1,0 +1,95 @@
+---
+import enhanceImage from "../../images/enhanced.svg";
+import exclusiveImage from "../../images/exclusive.svg";
+import realTimeImage from "../../images/real.svg";
+import keyFeactures from "../../images/key.avif";
+import { Image } from "astro:assets";
+---
+
+<section class="bg-white mb-10 dark:bg-[#030303]">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+    <div class="flex flex-col items-center align-middle p-5 mb-8 lg:mb-16">
+      <h2
+        class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+      >
+        Explore Our Key Features
+      </h2>
+      <p
+        class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-40 dark:text-gray-100"
+      >
+        Discover essential features designed to enhance your experience and
+        improve productivity in everyday tasks.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 dark:text-white text-center">
+      <div class="rounded-3xl p-5">
+        <ul class="text-left list-none mb-5">
+          <li class="mb-2">
+            <h2 class="uppercase font-extrabold text-pink-700">
+              Powerful and Efficient
+            </h2>
+          </li>
+          <li class="mb-2"><h2 class="text-3xl">User-Friendly Design</h2></li>
+          <li class="mb-2">
+            <h2 class="text-gray-400">
+              Experience a seamless interface that prioritizes user engagement
+              and efficiency.
+            </h2>
+          </li>
+        </ul>
+        <ul class="text-left list-none">
+          <li class="mb-2">
+            <div class="flex flex-row justify-start space-x-3 mb-4">
+              <div>
+                <Image src={exclusiveImage} alt="A description of the image" />
+              </div>
+              <div>
+                <h2 class="text-2xl">Exclusive Benefits</h2>
+                <p class="text-gray-400">
+                  Gain access to unique features tailored to enhance your
+                  workflow and satisfaction.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="mb-2">
+            <div class="flex flex-row justify-start space-x-3 mb-4">
+              <div>
+                <Image src={enhanceImage} alt="A description of the image" />
+              </div>
+              <div>
+                <h2 class="text-2xl">Enhanced Security</h2>
+                <p class="text-gray-400">
+                  Enjoy advanced security protocols to protect your data at all
+                  ti
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="mb-2">
+            <div class="flex flex-row justify-start space-x-3 mb-4">
+              <div>
+                <Image src={realTimeImage} alt="A description of the image" />
+              </div>
+              <div>
+                <h2 class="text-2xl">Real-Time Collaborations</h2>
+                <p class="text-gray-400">
+                  Work together with team members seamlessly using our
+                  collaborative tools.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="bg-[#000000] rounded-3xl p-2">
+        <Image
+          src={keyFeactures}
+          class="rounded-3xl"
+          alt="A description of the image"
+        />
+      </div>
+    </div>
+  </div>
+</section>

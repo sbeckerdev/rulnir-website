@@ -1,0 +1,66 @@
+---
+import functionalImage from '../../images/functional.webp';
+import innovativeImage from '../../images/innovative.avif';
+import qualityImage from '../../images/quality.png';
+import sustainableImage from '../../images/sustainable.png';
+import trendingImage from '../../images/trending.png';
+
+import {Image } from 'astro:assets';
+
+---
+
+
+<section class="bg-white  mb-10 dark:bg-[#030303]">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+      <div class=" flex  flex-col items-center align-middle p-5   mb-8 lg:mb-16">
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">   Navigate Smarter with Simplified Innovation</h2>
+         
+      </div>
+      <div class=" grid grid-cols-1 gap-4 p-5   text-center">
+          <div class="   gap-4 md:grid md:grid-cols-2 lg:grid-cols-2 md:gap-4 md:space-y-0">
+
+   <div class="  p-6 rounded-3xl shadow-md dark:bg-[#171717]">
+               
+             
+              <Image src={innovativeImage} alt="A description of the image" />
+                <h3 class="mb-2 text-xl font-bold dark:text-white">Innovative Designs Await</h3>
+              <p class="text-gray-500 dark:text-gray-400">Explore our curated selection of innovative designs that cater to your unique style and needs, featuring the latest trends.</p>
+          </div>
+   <div class="p-6 rounded-3xl shadow-md dark:bg-[#171717]">
+             
+               
+              <Image src={functionalImage} alt="A description of the image" />
+              <h3 class="mb-2 text-xl font-bold dark:text-white">Functional Artistryl</h3>
+              <p class="text-gray-500 dark:text-gray-400">Each item blends functionality and artistry, ensuring that beauty meets practicality in everyday use.</p>
+          </div>
+
+          </div>
+      <div class="  gap-4 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-4 md:space-y-0">
+        
+        
+          <div class="p-6 rounded-3xl shadow-md dark:bg-[#171717]">
+              
+               
+                <Image src={qualityImage} alt="A description of the image" />
+                <h3 class="mb-2 text-xl font-bold dark:text-white">Quality Craftsmanship</h3>
+              <p class="text-gray-500 dark:text-gray-400">Meticulously crafted products showcase exceptional quality, reflecting our dedication to superior craftsmanship and detail.</p>
+          </div>
+          <div class="p-6 rounded-3xl shadow-md dark:bg-[#171717]">
+              
+               
+                <Image src={sustainableImage} alt="A description of the image" />
+                <h3 class="mb-2 text-xl font-bold dark:text-white">Sustainable Materials</h3>
+              <p class="text-gray-500 dark:text-gray-400">Committed to sustainability, our range uses eco-friendly materials that minimize environmental impact while providing elegance.</p>
+          </div>
+          <div class="p-6 rounded-3xl shadow-md dark:bg-[#171717]">
+              
+              
+                <Image src={trendingImage} alt="A description of the image" />
+                 <h3 class="mb-2 text-xl font-bold dark:text-white">Trending Now</h3>
+              <p class="text-gray-500 dark:text-gray-400">Stay ahead of the curve with our trending items, designed to elevate your space and resonate with current tastes.</p>
+          </div>
+          <div>
+                 <div> 
+      </div>
+  </div>
+</section>

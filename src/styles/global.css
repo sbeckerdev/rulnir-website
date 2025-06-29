@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@import "preline/variants.css";
+@source "../../node_modules/preline/dist/*.js";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+
+@theme {
+  --color-background-50: #f7f8f8;
+  --color-background-900: #030303;
+  --color-background-950: #000000;
+  --color-navbar-50: #ffffff;
+  --color-navbar-950: #000000;
+
+}
+
+body {
+  @apply bg-background-50 dark:bg-background-900;
+}
+/* Adds pointer cursor to buttons */
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+/* Defaults hover styles on all devices */
+@custom-variant hover (&:hover);

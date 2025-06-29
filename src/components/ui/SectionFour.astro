@@ -1,0 +1,39 @@
+---
+import communityImage from "../../images/community.webp";
+import { Image } from "astro:assets";
+---
+
+<section class="bg-white mb-10 dark:bg-[#030303]">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+    <div
+      class="flex flex-col    p-10 mb-8 lg:mb-16 bg-[#171717] overflow-hidden rounded-3xl"
+    >
+      <!-- Card -->
+
+      <div class="grid lg:grid-cols-2  sm:grid-cols-1 md:grid-cols-2  gap-4 dark:text-white ">
+        <div>
+          <div
+            class=" flex flex-col justify-start place-items-start space-y-2"
+          >
+            <h3
+              class="font-semibold text-4xl lg:text-5xl text-gray-800 dark:text-neutral-300"
+            >
+              Join Our Exciting Community
+            </h3>
+            <p class="mt-1 text-sm text-gray-500 dark:text-neutral-500">
+              Join a vibrant community of creators, share ideas, and collaborate
+              on projects.
+            </p>
+          </div>
+        </div>
+        <div class="relative h-64">
+          <Image
+            src={communityImage}
+            class="absolute right-0  lg:translate-x-28  lg:top-2 md:translate-x-20    md:-bottom-10 sm:translate-x-16  "
+            alt="A description of the image"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
